@@ -15,14 +15,7 @@
                                 <input type="text" id="manage-role-name" name="manage_role_name" class="form-control" placeholder="" required>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Description</label>
-                            <div class="col-md-9">
-                                <input type="text" id="manage-role-desc" name="manage_role_desc" class="form-control" placeholder="" required>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" onclick="remove();" class="btn red btn-outline pull-left" id="manage-role-delete">Delete</button>

@@ -18,7 +18,6 @@ class CreateRoleTable extends Migration
             $table->bigIncrements('role_id');
             $table->string('display_name');
             $table->string('description');
-            $table->timestamps();
         });
 
         DB::table('role')->insert(

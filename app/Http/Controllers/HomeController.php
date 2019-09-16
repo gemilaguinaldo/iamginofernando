@@ -23,7 +23,7 @@ class HomeController extends Controller
     {
         $user_id = Auth::user()->user_id;
         $expenses = $users = DB::select('select sum(e.amount) as amount, ec.display_name
-                                        from expense e, expense_categ ec, users u 
+                                        from expense e, expense_categ ec, users u
                                         where u.user_id = ? and
                                         u.user_id = e.user_id and
                                         e.expense_categ_id = ec.expense_categ_id

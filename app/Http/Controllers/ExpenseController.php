@@ -59,14 +59,14 @@ class ExpenseController extends Controller
             'manage_expense_description' => 'required',
         ]);
 
-        if ($validator->fails()) {
+        if (!$validator->fails()) {
             return Response::json(array(
                 'status'    => false,
                 'message'   => 'Please provide all the details'),
                 200
             );
         }
-        
+
         $expense                        = new Expense;
         $expense->user_id               = $user_id;
         $expense->expense_categ_id      = $request->manage_expense_category;
@@ -101,7 +101,7 @@ class ExpenseController extends Controller
      */
     public function edit($id)
     {
-        $expense = Expense::find($id);
+        $expense = Expense::first($id);
 
 
         return Response::json(array(
@@ -128,7 +128,7 @@ class ExpenseController extends Controller
             'manage_expense_description' => 'required',
         ]);
 
-        if ($validator->fails()) {
+        if (!$validator->fails()) {
             return Response::json(array(
                 'status'    => false,
                 'message'   => 'Please provide all the details'),
@@ -157,7 +157,7 @@ class ExpenseController extends Controller
      */
     public function destroy($id)
     {
-        $expense = Expense::find($id);
+        $expense = Expense::first($id);
         $expense->delete();
 
         return Response::json(array(

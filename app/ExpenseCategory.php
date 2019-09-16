@@ -10,6 +10,6 @@ class ExpenseCategory extends Model
     protected $primaryKey = 'expense_categ_id';
 
     public function getExpense()  {
-        return $this->hasMany('App\Expense','expense_id');
+        return $this->hasMany('Expense','expense_id');
     }
 }

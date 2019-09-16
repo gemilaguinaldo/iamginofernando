@@ -19,7 +19,6 @@ Route::group(array('prefix' => 'admin'), function () {
     Route::get('users',         'NavigationController@users')->name('users');
     Route::get('roles',         'NavigationController@role')->name('role');
     Route::get('expense',       'NavigationController@expense')->name('expense');
-    Route::get('expensecateg',  'NavigationController@expenseCateg')->name('expensecateg');
+    Route::get('expensecategory',  'NavigationController@expenseCategory')->name('expensecategory');
     Route::get('home',          'NavigationController@home')->name('home');
-
 });

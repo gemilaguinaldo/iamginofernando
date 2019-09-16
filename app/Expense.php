@@ -6,11 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Expense extends Model
 {
-    protected $table      = 'expense';
     protected $primaryKey = 'expense_id';
 
     public function getCategory()  {
-        return $this->belongsTo('App\ExpenseCategory','expense_categ_id');
+        return $this->belongsTo('App\ExpenseCategory','expense_category_id');
     }
 
     public function getUser()  {

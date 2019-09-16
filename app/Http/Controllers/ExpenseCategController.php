@@ -61,7 +61,6 @@ class ExpenseCategController extends Controller
         $expenseCategory                   = new ExpenseCategory();
         $expenseCategory->display_name     = $request->manage_expensecategory_name;
         $expenseCategory->description      = $request->manage_expensecategory_desc;
-        $expenseCategory->save();
 
         return Response::json(array(
             'expensecategory'      => collect($expenseCategory)->toArray(),
@@ -123,7 +122,6 @@ class ExpenseCategController extends Controller
 
         $expenseCategory->display_name           = $request->manage_expensecategory_name;
         $expenseCategory->description            = $request->manage_expensecategory_desc;
-        $expenseCategory->save();
 
         return Response::json(array(
             'expensecategory'      => collect($expenseCategory)->toArray(),

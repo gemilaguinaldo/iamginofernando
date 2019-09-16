@@ -13,7 +13,7 @@ class CreateExpenseCategTable extends Migration
      */
     public function up()
     {
-        Schema::create('expense_categ', function (Blueprint $table) {
+        Schema::create('expense_category', function (Blueprint $table) {
             $table->bigIncrements('expense_categ_id');
             $table->string('display_name');
             $table->string('description');

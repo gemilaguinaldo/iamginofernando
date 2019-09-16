@@ -31,7 +31,7 @@
                                     <th>Email</th>
                                     <th>Role</th>
                                     <th>Created At</th>
-                                    <tbody id="user_list">       
+                                    <tbody id="user_list">
                                     </tbody>
                                 </table>
                                 <a class="btn btn-default pull-right" onclick="add();"> Add User </a>
@@ -48,7 +48,6 @@
     <!-- END CONTENT BODY -->
 </div>
 <!-- END CONTENT -->
-@include('components.manageuser')
 
 @endsection
 @section("page-script")

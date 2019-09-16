@@ -40,7 +40,7 @@
 
                                    </tbody>
                                 </table>
-                                
+
                             </div>
                             <div class="col-md-8">
                                 <div id="chart_6" class="chart" style="height: 525px;"> </div>

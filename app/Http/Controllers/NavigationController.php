@@ -30,7 +30,7 @@ class NavigationController extends Controller
     function users() {
         return view('usermanagement.user');
     }
-    
+
     function role() {
         return view('usermanagement.role');
     }

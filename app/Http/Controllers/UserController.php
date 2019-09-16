@@ -52,7 +52,6 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'manage_user_name' => 'required',
             'manage_user_email' => 'required',
@@ -62,7 +61,7 @@ class UserController extends Controller
         if ($validator->fails()) {
             return response()->json(['errors'=>$validator->errors()->all()]);
         }
-        
+
         $user                   = new User;
         $user->name             = $request->manage_user_name;
         $user->email            = $request->manage_user_email;
@@ -87,7 +86,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        // 
+        //
     }
 
     /**
